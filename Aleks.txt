@@ -1,8 +1,12 @@
 Hallo Welt
 Hi how r u Alex
 Alex is drinking
+<<<<<<< Updated upstream
 
 Only on weekeneds ;)
 =======
 Halo
 >>>>>>> df4149e320e45c288c649d2a0226a8f14d696b3d
+=======
+Trying
+>>>>>>> Stashed changes
