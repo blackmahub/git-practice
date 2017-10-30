@@ -5,11 +5,18 @@
 <title>CV</title>
 <style type="text/css">
 
+.fixed-home {
+  position: fixed;
+  width: auto;
+  border: 3px black;
+  font-size: 11pt;
+}
+
 div.tab {
     overflow: hidden;
     border: 1px solid ;
     background-color: #f1f1f1;
-	width:584px;
+	  width:584px;
 }
 
 div.tab button {
@@ -36,11 +43,11 @@ div.tab button.active {
     display: none;
     padding: 6px 12px;
     border-top: none;
-} 
+}
 
 .tabcontent {
     -webkit-animation: fadeEffect 1s;
-    animation: fadeEffect 1s; 
+    animation: fadeEffect 1s;
 }
 
 @-webkit-keyframes fadeEffect {
@@ -54,11 +61,11 @@ div.tab button.active {
 }
 
 body{
-	background-color: #64B058; 
+	background-color: #64B058;
 	color:#0A4600;
 	}
-	
-	
+
+
 </style>
 </head>
 
@@ -66,8 +73,12 @@ body{
 
 <body>
 
+  <div class="fixed-home">
+    <button onclick="history.back()">◄HOME</button>
+  </div>
+
 <div style="float:right;"><img src="img/photo_2017-10-29_21-03-01.jpg" width="180" height="175" float:right;/></div>
-<h2>Curriculum Vitae</h2>
+<br/><h2>Curriculum Vitae</h2>
 
 <div class="tab">
   <button class="tablinks" onclick="openCity(event, 'Personal information')" id="defaultOpen">Personal information</button>
@@ -93,7 +104,7 @@ body{
 <div id="Work Experience" class="tabcontent">
   <h3>Work Experience</h3>
   <p>Internship as an IT assistant</p>
-</div> 
+</div>
 
 <div id="Computer Skills" class="tabcontent">
   <h3>Computer Skills</h3>
@@ -104,26 +115,26 @@ body{
 <script>
 
 function openCity(evt, tabname) {
-    
+
     var i, tabcontent, tablinks;
 
-   
+
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";
     }
 
-   
+
     tablinks = document.getElementsByClassName("tablinks");
     for (i = 0; i < tablinks.length; i++) {
         tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
 
-    
+
     document.getElementById(tabname).style.display = "block";
     evt.currentTarget.className += " active";
-} 
- 
+}
+
 document.getElementById("defaultOpen").click();
 
 </script>

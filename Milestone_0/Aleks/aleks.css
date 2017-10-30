@@ -55,6 +55,12 @@
 	display: block;
 }
 
+.fixed-home {
+  position: fixed;
+  width: auto;
+  border: 3px black;
+  font-size: 11pt;
+}
 
 
 
@@ -143,7 +149,7 @@
 		}
 
 	.experiences ul, .formations ul {
-		
+
 	}
 
 	section[role=main] h4 {

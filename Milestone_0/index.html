@@ -1,84 +1,95 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>framework's home page</title>
-<style type="text/css">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-.header{ 
-  width:149px ;  
-  height:138px ;   
-  
-   }
-   
-body,html{ 
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-  margin:0px;  
-  padding:0px;   
-  direction:ltr; 
-  background-color: #EFE4B0;
-  
-    }  
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <title>framework's home page</title>
+  <style type="text/css">
 
-.boxed {
-  border: 1px solid green ;
-  width :180px;
-  text-align: center;
-  color:#044F0D;
-  border-radius:50px;
-  background-color:#A7E78C;
-  margin-left:80px;
-} 	
+  .header{
+    width:149px ;
+    height:138px ;
+  }
 
-.boxed  a {
-	 color:#12410D;
-	 text-decoration : none; 
-	
-	 }
+  body,html{
+
+    margin:0px;
+    padding:0px;
+    direction:ltr;
+    background-color: #EFE4B0;
+
+  }
+
+  .boxed {
+    border: 1px solid green ;
+    width :250px;
+    height: 50px;
+    border-radius:50px;
+    color:#044F0D;
+    background-color:#A7E78C;
+  }
+
+  .boxed  a {
+    color:#12410D;
+    cursor: grab;
+  }
+
+  .boxed p {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 
 
-</style>
+  </style>
 
 </head>
+<body style="color:#2D762F;">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-1" style="position: float">
+        <img src="newimg.png" width="200" height="182"/>
+      </div>
 
-<body style="color:#2D762F;" padding:0; margin:0;>
-
-<div class="header">
-
- <img src="newimg.png" width="149" height="138"/>
- 
- </div>
-
-
-
-<div class="header2">
-<center><h2><font size="+3" face="Constantia, Lucida Bright, DejaVu Serif, Georgia, serif">Software Engineering class HSFULDA</font></h2></center>
-<center><h3>Winter 2017</h3></center>
-<center><h3>Section M</h3></center>
-<center><h3>Team N</h3></center>
-</div>
-
-
-<div class="boxed">
- <p><a href="aleks/Aleks-Profile.html">Aleksandar Mitkovski</a></p>
-</div>
-<br>
-<div class="boxed">
- <p><a href="Swetaketu/index.html">Swetaketu Majumder</a></p>
-</div>
-<br>
-<div class="boxed">
- <p><a href="Akhila/Akhila_Profile.html">Akhila Cyriac Panackal</a></p>
-</div>
-<br>
-<div class="boxed">
- <p><a href="Mahbub/mahbub.html">Mahbubur Rahman</a></p>
-</div>
-<br>
-<div class="boxed">
- <p><a href="mahdis/cv2.html">Mahdis Lohrasebynejad</a></p>
-</div>
-
-
-</body>
-</html>
+      <div class="col-lg-11">
+        <center><h2><font size="+3" face="Constantia, Lucida Bright, DejaVu Serif, Georgia, serif">Software Engineering Class HSFULDA</font></h2></center>
+        <center><h3>Winter 2017</h3></center>
+        <center><h3>Group fa17g22</h3></center>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-1"></div>
+      <div class="col-lg-11" align="center">
+        <div class="boxed">
+          <p><a href="aleks/Aleks-Profile.html">Aleksandar Mitkovski</a></p>
+        </div>
+        <br>
+        <div class="boxed">
+          <p><a href="Swetaketu/index.html">Swetaketu Majumder</a></p>
+        </div>
+        <br>
+        <div class="boxed">
+          <p><a href="Akhila/Akhila_Profile.html">Akhila Cyriac Panackal</a></p>
+        </div>
+        <br>
+        <div class="boxed">
+          <p><a href="Mahbub/mahbub.html">Mahbubur Rahman</a></p>
+        </div>
+        <br>
+        <div class="boxed">
+          <p><a href="mahdis/cv2.html">Mahdis Lohrasebynejad</a></p>
+        </div>
+      </div>
+    </div>
+  </body>
+  </html>

@@ -2,8 +2,20 @@
 	<head>
 		<title>About Me</title>
 		<script type='text/javascript' src='mahbub.js'></script>
+		<style>
+		.fixed-home {
+		  position: fixed;
+		  width: auto;
+		  border: 3px black;
+		  font-size: 11pt;
+		}
+		</style>
 	</head>
 	<body onload='loadMyself()'>
+		<div class="fixed-home">
+			<button onclick="history.back()">◄HOME</button>
+		</div>
+		<br/>
 		<div>
 			<h1>About Me</h1>
 			<h3>(Please read ReadMe.txt to run nodejs version.)</h3>
