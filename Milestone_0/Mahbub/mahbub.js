@@ -1,3 +1,5 @@
+//const http = require('http');
+
 var me = {
 	name: 'Mahbubur Rahman',
 	dob: '02-08-1987',
@@ -11,7 +13,7 @@ var me = {
 				street: 'Heinrich-von-Bibra-Platz 3',
 				postCode: '36037',
 				city: 'Fulda',
-				country: 'Germany',
+				country: 'Germany'
 			}
 		],
 		phone: '+4915211413724',
@@ -47,7 +49,7 @@ var me = {
 							street: '',
 							postCode: '',
 							city: '',
-							country: '',
+							country: ''
 						}
 					],
 					phone: '',
@@ -123,5 +125,37 @@ function generateTableForArray (jsArr) {
 
 function loadMyself () {
 	generateTableForObject(me);
-	document.getElementById('myself').innerHTML = meInHtml;			
+	document.getElementById('myself').innerHTML = meInHtml;					
 }
+
+/*function getAboutMe () {
+	var port = document.getElementById('port').value;
+	
+	if (!port) {
+		alert('Please enter correct port number');
+	}
+
+	http.get('127.0.0.1:' + port + '/about-me', function (res) {		
+		res.on('error', function (err) {
+			console.log('response error: ', err);
+		});
+
+		res.setEncoding('UTF-8');
+
+		var jsnMsg = '';
+
+		res.on('data', function (chunk) {
+			jsnMsg += chunk;
+		});
+
+		res.on('end', function () {
+			var jsnObj = JSON.parse(jsnMsg);
+			meInHtml = '';
+			generateTableForObject(jsnObj);
+			document.getElementById('nodeMyself').innerHTML = meInHtml;
+		});
+	})
+	.on('error', function (err) {
+		console.log('request error: ', err);
+	});
+}*/
