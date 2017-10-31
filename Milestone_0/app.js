@@ -13,7 +13,7 @@ var server = app.listen(17022, "localhost", function()
 
 var urlencodedParser = parser.urlencoded({ extended: false })
 
-app.get('/', function(req,res)
+app.get('/swetaketumajumder', function(req,res)
 {
   res.render('index');
 });
