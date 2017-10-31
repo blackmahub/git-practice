@@ -4,7 +4,7 @@ var app = express();
 
 app.set('view engine', 'ejs');
 app.use( express.static( "Public" ) );
-var server = app.listen(17022, "https://sfsuse.com/~swetaketumajumder/", function()
+var server = app.listen(17022, "sfsuse.com/~swetaketumajumder", function()
 {
   var host = server.address().address;
   var port = server.address().port;
