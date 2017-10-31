@@ -4,7 +4,7 @@ var app = express();
 
 app.set('view engine', 'ejs');
 app.use( express.static( "Public" ) );
-app.listen(17022, "0.0.0.0");
+app.listen(80, "0.0.0.0");
 
 var urlencodedParser = parser.urlencoded({ extended: false })
 
