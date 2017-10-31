@@ -4,7 +4,12 @@ var app = express();
 
 app.set('view engine', 'ejs');
 app.use( express.static( "Public" ) );
-app.listen(17022, "0.0.0.0");
+var server = app.listen(17022, function()
+{
+  var host = server.address().address;
+  var port = server.address().port;
+  console.log("Host: "+host+" Port: "+port);
+});
 
 var urlencodedParser = parser.urlencoded({ extended: false })
 
