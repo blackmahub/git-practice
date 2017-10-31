@@ -19,37 +19,17 @@
   }
 
   body,html{
-
     margin:0px;
     padding:0px;
     direction:ltr;
     background-color: #EFE4B0;
-
   }
 
-  .boxed {
-    border: 1px solid green ;
-    width :250px;
-    height: 50px;
-    border-radius:50px;
-    color:#044F0D;
-    background-color:#A7E78C;
+  button
+  {
+    min-width:  250px;
+    min-height: 50px;
   }
-
-  .boxed  a {
-    color:#12410D;
-    cursor: grab;
-  }
-
-  .boxed p {
-    margin: 0;
-    padding: 0;
-    position: relative;
-    text-align: center;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-
 
   </style>
 
@@ -70,25 +50,27 @@
     <div class="row">
       <div class="col-lg-1"></div>
       <div class="col-lg-11" align="center">
-        <div class="boxed">
-          <p><a href="aleks/Aleks-Profile.html">Aleksandar Mitkovski</a></p>
-        </div>
+          <form method="get" action="/aleksandar">
+            <button class="btn-success">Aleksandar Mitkovski</button>
+          </form>
         <br>
         <div class="boxed">
-          <p><a href="Swetaketu/index.html">Swetaketu Majumder</a></p>
+          <form method="get" action="/swetaketu">
+            <button class="btn-success">Swetaketu Majumder</button>
+          </form>
         </div>
         <br>
-        <div class="boxed">
-          <p><a href="Akhila/Akhila_Profile.html">Akhila Cyriac Panackal</a></p>
-        </div>
+          <form method="get" action="/akhila">
+            <button class="btn-success">Akhila Cyriac Panackal</button>
+          </form>
         <br>
-        <div class="boxed">
-          <p><a href="Mahbub/mahbub.html">Mahbubur Rahman</a></p>
-        </div>
+          <form method="get" action="/mahbubur">
+            <button class="btn-success">Mahbubur Rahman</button>
+          </form>
         <br>
-        <div class="boxed">
-          <p><a href="mahdis/cv2.html">Mahdis Lohrasebynejad</a></p>
-        </div>
+          <form method="get" action="/mahdis">
+            <button class="btn-success">Mahdis Lohrasebynejad</button>
+          </form>
       </div>
     </div>
   </body>
