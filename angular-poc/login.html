@@ -1,0 +1,29 @@
+<div class="card card-container">
+	<img id="profile-img" class="profile-img-card" src="avatar.png" />
+	<p id="profile-name" class="profile-name-card"></p>
+	<form class="form-signin" name="myLoginForm">
+		<span id="reauth-email" class="reauth-email"></span>
+		<input type="email" id="inputEmail" ng-model="user.email" name="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+		<div class="validations">
+			<span class="error" ng-show="myLoginForm.inputEmail.$touched&&myLoginForm.inputEmail.$error.required">
+			Required!</span>
+			<span class="error" ng-show="myLoginForm.inputEmail.$error.email">
+			Not valid email!</span>
+		</div>
+		<input type="password" id="inputPassword" ng-model="user.password" name="inputPassword" class="form-control" placeholder="Password" required>
+		<div class="validations">
+			<span class="error" ng-show="myLoginForm.inputPassword.$touched&&myLoginForm.inputPassword.$error.required">
+			Required!</span>
+		</div>
+		<div id="remember" class="checkbox" >
+		    <label>
+		         <input type="checkbox" value="remember-me" ng-model="chkRemember"> Remember me
+		    </label>
+		</div>
+		<input type="button" class="btn btn-lg btn-primary btn-block btn-signin" ng-click="signIn()" value="Sign in">
+
+	 </form>
+	<a href="#" class="forgot-password">
+		Forgot the password?
+	</a>
+</div>
